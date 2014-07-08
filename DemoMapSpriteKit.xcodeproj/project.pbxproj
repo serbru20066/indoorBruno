@@ -1,0 +1,511 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CEC7539E196C3AC1009FD205 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC7539D196C3AC1009FD205 /* Foundation.framework */; };
+		CEC753A0196C3AC1009FD205 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC7539F196C3AC1009FD205 /* CoreGraphics.framework */; };
+		CEC753A2196C3AC1009FD205 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC753A1196C3AC1009FD205 /* UIKit.framework */; };
+		CEC753A4196C3AC1009FD205 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC753A3196C3AC1009FD205 /* SpriteKit.framework */; };
+		CEC753AA196C3AC1009FD205 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CEC753A8196C3AC1009FD205 /* InfoPlist.strings */; };
+		CEC753AC196C3AC1009FD205 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC753AB196C3AC1009FD205 /* main.m */; };
+		CEC753B0196C3AC1009FD205 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC753AF196C3AC1009FD205 /* AppDelegate.m */; };
+		CEC753B3196C3AC1009FD205 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEC753B1196C3AC1009FD205 /* Main.storyboard */; };
+		CEC753B6196C3AC1009FD205 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC753B5196C3AC1009FD205 /* ViewController.m */; };
+		CEC753B9196C3AC1009FD205 /* MyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC753B8196C3AC1009FD205 /* MyScene.m */; };
+		CEC753BB196C3AC1009FD205 /* Spaceship.png in Resources */ = {isa = PBXBuildFile; fileRef = CEC753BA196C3AC1009FD205 /* Spaceship.png */; };
+		CEC753BD196C3AC1009FD205 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEC753BC196C3AC1009FD205 /* Images.xcassets */; };
+		CEC753C4196C3AC1009FD205 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC753C3196C3AC1009FD205 /* XCTest.framework */; };
+		CEC753C5196C3AC1009FD205 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC7539D196C3AC1009FD205 /* Foundation.framework */; };
+		CEC753C6196C3AC1009FD205 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC753A1196C3AC1009FD205 /* UIKit.framework */; };
+		CEC753CE196C3AC2009FD205 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CEC753CC196C3AC2009FD205 /* InfoPlist.strings */; };
+		CEC753D0196C3AC2009FD205 /* DemoMapSpriteKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC753CF196C3AC2009FD205 /* DemoMapSpriteKitTests.m */; };
+		CEC753DB196C40C6009FD205 /* licoressprite.png in Resources */ = {isa = PBXBuildFile; fileRef = CEC753D9196C40C6009FD205 /* licoressprite.png */; };
+		CEC753DC196C40C6009FD205 /* mapa.png in Resources */ = {isa = PBXBuildFile; fileRef = CEC753DA196C40C6009FD205 /* mapa.png */; };
+		CEC753DE196C419E009FD205 /* mapa2.png in Resources */ = {isa = PBXBuildFile; fileRef = CEC753DD196C419E009FD205 /* mapa2.png */; };
+		CEC753E2196C4A48009FD205 /* flecha.png in Resources */ = {isa = PBXBuildFile; fileRef = CEC753E1196C4A48009FD205 /* flecha.png */; };
+		CEC753E4196C4DE0009FD205 /* puntaflecha.png in Resources */ = {isa = PBXBuildFile; fileRef = CEC753E3196C4DE0009FD205 /* puntaflecha.png */; };
+		CEC753E6196C5129009FD205 /* cuerpoflecha.png in Resources */ = {isa = PBXBuildFile; fileRef = CEC753E5196C5129009FD205 /* cuerpoflecha.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CEC753C7196C3AC2009FD205 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEC75392196C3AC1009FD205 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CEC75399196C3AC1009FD205;
+			remoteInfo = DemoMapSpriteKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CEC7539A196C3AC1009FD205 /* DemoMapSpriteKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoMapSpriteKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEC7539D196C3AC1009FD205 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CEC7539F196C3AC1009FD205 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		CEC753A1196C3AC1009FD205 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		CEC753A3196C3AC1009FD205 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		CEC753A7196C3AC1009FD205 /* DemoMapSpriteKit-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DemoMapSpriteKit-Info.plist"; sourceTree = "<group>"; };
+		CEC753A9196C3AC1009FD205 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CEC753AB196C3AC1009FD205 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CEC753AD196C3AC1009FD205 /* DemoMapSpriteKit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DemoMapSpriteKit-Prefix.pch"; sourceTree = "<group>"; };
+		CEC753AE196C3AC1009FD205 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CEC753AF196C3AC1009FD205 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CEC753B2196C3AC1009FD205 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CEC753B4196C3AC1009FD205 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		CEC753B5196C3AC1009FD205 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		CEC753B7196C3AC1009FD205 /* MyScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyScene.h; sourceTree = "<group>"; };
+		CEC753B8196C3AC1009FD205 /* MyScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyScene.m; sourceTree = "<group>"; };
+		CEC753BA196C3AC1009FD205 /* Spaceship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spaceship.png; sourceTree = "<group>"; };
+		CEC753BC196C3AC1009FD205 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		CEC753C2196C3AC1009FD205 /* DemoMapSpriteKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoMapSpriteKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEC753C3196C3AC1009FD205 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		CEC753CB196C3AC2009FD205 /* DemoMapSpriteKitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DemoMapSpriteKitTests-Info.plist"; sourceTree = "<group>"; };
+		CEC753CD196C3AC2009FD205 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CEC753CF196C3AC2009FD205 /* DemoMapSpriteKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoMapSpriteKitTests.m; sourceTree = "<group>"; };
+		CEC753D9196C40C6009FD205 /* licoressprite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = licoressprite.png; sourceTree = "<group>"; };
+		CEC753DA196C40C6009FD205 /* mapa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mapa.png; sourceTree = "<group>"; };
+		CEC753DD196C419E009FD205 /* mapa2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mapa2.png; sourceTree = "<group>"; };
+		CEC753E1196C4A48009FD205 /* flecha.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flecha.png; sourceTree = "<group>"; };
+		CEC753E3196C4DE0009FD205 /* puntaflecha.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = puntaflecha.png; sourceTree = "<group>"; };
+		CEC753E5196C5129009FD205 /* cuerpoflecha.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cuerpoflecha.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CEC75397196C3AC1009FD205 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEC753A0196C3AC1009FD205 /* CoreGraphics.framework in Frameworks */,
+				CEC753A2196C3AC1009FD205 /* UIKit.framework in Frameworks */,
+				CEC753A4196C3AC1009FD205 /* SpriteKit.framework in Frameworks */,
+				CEC7539E196C3AC1009FD205 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEC753BF196C3AC1009FD205 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEC753C4196C3AC1009FD205 /* XCTest.framework in Frameworks */,
+				CEC753C6196C3AC1009FD205 /* UIKit.framework in Frameworks */,
+				CEC753C5196C3AC1009FD205 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CEC75391196C3AC1009FD205 = {
+			isa = PBXGroup;
+			children = (
+				CEC753E5196C5129009FD205 /* cuerpoflecha.png */,
+				CEC753E3196C4DE0009FD205 /* puntaflecha.png */,
+				CEC753E1196C4A48009FD205 /* flecha.png */,
+				CEC753DD196C419E009FD205 /* mapa2.png */,
+				CEC753D9196C40C6009FD205 /* licoressprite.png */,
+				CEC753DA196C40C6009FD205 /* mapa.png */,
+				CEC753A5196C3AC1009FD205 /* DemoMapSpriteKit */,
+				CEC753C9196C3AC2009FD205 /* DemoMapSpriteKitTests */,
+				CEC7539C196C3AC1009FD205 /* Frameworks */,
+				CEC7539B196C3AC1009FD205 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CEC7539B196C3AC1009FD205 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CEC7539A196C3AC1009FD205 /* DemoMapSpriteKit.app */,
+				CEC753C2196C3AC1009FD205 /* DemoMapSpriteKitTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CEC7539C196C3AC1009FD205 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CEC7539D196C3AC1009FD205 /* Foundation.framework */,
+				CEC7539F196C3AC1009FD205 /* CoreGraphics.framework */,
+				CEC753A1196C3AC1009FD205 /* UIKit.framework */,
+				CEC753A3196C3AC1009FD205 /* SpriteKit.framework */,
+				CEC753C3196C3AC1009FD205 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CEC753A5196C3AC1009FD205 /* DemoMapSpriteKit */ = {
+			isa = PBXGroup;
+			children = (
+				CEC753AE196C3AC1009FD205 /* AppDelegate.h */,
+				CEC753AF196C3AC1009FD205 /* AppDelegate.m */,
+				CEC753B1196C3AC1009FD205 /* Main.storyboard */,
+				CEC753B4196C3AC1009FD205 /* ViewController.h */,
+				CEC753B5196C3AC1009FD205 /* ViewController.m */,
+				CEC753B7196C3AC1009FD205 /* MyScene.h */,
+				CEC753B8196C3AC1009FD205 /* MyScene.m */,
+				CEC753BA196C3AC1009FD205 /* Spaceship.png */,
+				CEC753BC196C3AC1009FD205 /* Images.xcassets */,
+				CEC753A6196C3AC1009FD205 /* Supporting Files */,
+			);
+			path = DemoMapSpriteKit;
+			sourceTree = "<group>";
+		};
+		CEC753A6196C3AC1009FD205 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CEC753A7196C3AC1009FD205 /* DemoMapSpriteKit-Info.plist */,
+				CEC753A8196C3AC1009FD205 /* InfoPlist.strings */,
+				CEC753AB196C3AC1009FD205 /* main.m */,
+				CEC753AD196C3AC1009FD205 /* DemoMapSpriteKit-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CEC753C9196C3AC2009FD205 /* DemoMapSpriteKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				CEC753CF196C3AC2009FD205 /* DemoMapSpriteKitTests.m */,
+				CEC753CA196C3AC2009FD205 /* Supporting Files */,
+			);
+			path = DemoMapSpriteKitTests;
+			sourceTree = "<group>";
+		};
+		CEC753CA196C3AC2009FD205 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CEC753CB196C3AC2009FD205 /* DemoMapSpriteKitTests-Info.plist */,
+				CEC753CC196C3AC2009FD205 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CEC75399196C3AC1009FD205 /* DemoMapSpriteKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEC753D3196C3AC2009FD205 /* Build configuration list for PBXNativeTarget "DemoMapSpriteKit" */;
+			buildPhases = (
+				CEC75396196C3AC1009FD205 /* Sources */,
+				CEC75397196C3AC1009FD205 /* Frameworks */,
+				CEC75398196C3AC1009FD205 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DemoMapSpriteKit;
+			productName = DemoMapSpriteKit;
+			productReference = CEC7539A196C3AC1009FD205 /* DemoMapSpriteKit.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CEC753C1196C3AC1009FD205 /* DemoMapSpriteKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEC753D6196C3AC2009FD205 /* Build configuration list for PBXNativeTarget "DemoMapSpriteKitTests" */;
+			buildPhases = (
+				CEC753BE196C3AC1009FD205 /* Sources */,
+				CEC753BF196C3AC1009FD205 /* Frameworks */,
+				CEC753C0196C3AC1009FD205 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CEC753C8196C3AC2009FD205 /* PBXTargetDependency */,
+			);
+			name = DemoMapSpriteKitTests;
+			productName = DemoMapSpriteKitTests;
+			productReference = CEC753C2196C3AC1009FD205 /* DemoMapSpriteKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CEC75392196C3AC1009FD205 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = Altimea;
+				TargetAttributes = {
+					CEC753C1196C3AC1009FD205 = {
+						TestTargetID = CEC75399196C3AC1009FD205;
+					};
+				};
+			};
+			buildConfigurationList = CEC75395196C3AC1009FD205 /* Build configuration list for PBXProject "DemoMapSpriteKit" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CEC75391196C3AC1009FD205;
+			productRefGroup = CEC7539B196C3AC1009FD205 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CEC75399196C3AC1009FD205 /* DemoMapSpriteKit */,
+				CEC753C1196C3AC1009FD205 /* DemoMapSpriteKitTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CEC75398196C3AC1009FD205 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEC753E2196C4A48009FD205 /* flecha.png in Resources */,
+				CEC753AA196C3AC1009FD205 /* InfoPlist.strings in Resources */,
+				CEC753E4196C4DE0009FD205 /* puntaflecha.png in Resources */,
+				CEC753BD196C3AC1009FD205 /* Images.xcassets in Resources */,
+				CEC753DC196C40C6009FD205 /* mapa.png in Resources */,
+				CEC753BB196C3AC1009FD205 /* Spaceship.png in Resources */,
+				CEC753DB196C40C6009FD205 /* licoressprite.png in Resources */,
+				CEC753DE196C419E009FD205 /* mapa2.png in Resources */,
+				CEC753E6196C5129009FD205 /* cuerpoflecha.png in Resources */,
+				CEC753B3196C3AC1009FD205 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEC753C0196C3AC1009FD205 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEC753CE196C3AC2009FD205 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CEC75396196C3AC1009FD205 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEC753B9196C3AC1009FD205 /* MyScene.m in Sources */,
+				CEC753B6196C3AC1009FD205 /* ViewController.m in Sources */,
+				CEC753B0196C3AC1009FD205 /* AppDelegate.m in Sources */,
+				CEC753AC196C3AC1009FD205 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEC753BE196C3AC1009FD205 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEC753D0196C3AC2009FD205 /* DemoMapSpriteKitTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CEC753C8196C3AC2009FD205 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CEC75399196C3AC1009FD205 /* DemoMapSpriteKit */;
+			targetProxy = CEC753C7196C3AC2009FD205 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CEC753A8196C3AC1009FD205 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEC753A9196C3AC1009FD205 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		CEC753B1196C3AC1009FD205 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEC753B2196C3AC1009FD205 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CEC753CC196C3AC2009FD205 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEC753CD196C3AC2009FD205 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CEC753D1196C3AC2009FD205 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CEC753D2196C3AC2009FD205 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CEC753D4196C3AC2009FD205 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DemoMapSpriteKit/DemoMapSpriteKit-Prefix.pch";
+				INFOPLIST_FILE = "DemoMapSpriteKit/DemoMapSpriteKit-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		CEC753D5196C3AC2009FD205 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DemoMapSpriteKit/DemoMapSpriteKit-Prefix.pch";
+				INFOPLIST_FILE = "DemoMapSpriteKit/DemoMapSpriteKit-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		CEC753D7196C3AC2009FD205 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DemoMapSpriteKit.app/DemoMapSpriteKit";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DemoMapSpriteKit/DemoMapSpriteKit-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "DemoMapSpriteKitTests/DemoMapSpriteKitTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		CEC753D8196C3AC2009FD205 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DemoMapSpriteKit.app/DemoMapSpriteKit";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DemoMapSpriteKit/DemoMapSpriteKit-Prefix.pch";
+				INFOPLIST_FILE = "DemoMapSpriteKitTests/DemoMapSpriteKitTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CEC75395196C3AC1009FD205 /* Build configuration list for PBXProject "DemoMapSpriteKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEC753D1196C3AC2009FD205 /* Debug */,
+				CEC753D2196C3AC2009FD205 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEC753D3196C3AC2009FD205 /* Build configuration list for PBXNativeTarget "DemoMapSpriteKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEC753D4196C3AC2009FD205 /* Debug */,
+				CEC753D5196C3AC2009FD205 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CEC753D6196C3AC2009FD205 /* Build configuration list for PBXNativeTarget "DemoMapSpriteKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEC753D7196C3AC2009FD205 /* Debug */,
+				CEC753D8196C3AC2009FD205 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CEC75392196C3AC1009FD205 /* Project object */;
+}
