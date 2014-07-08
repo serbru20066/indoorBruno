@@ -15,5 +15,5 @@
     float posy;
     CGPoint location;
 }
-@property (nonatomic) SKSpriteNode* nodoflecha;
+
 @end

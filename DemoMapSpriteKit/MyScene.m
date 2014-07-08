@@ -55,8 +55,7 @@
 
 -(void)update:(CFTimeInterval)currentTime {
     
-SKSpriteNode* nodo =(SKSpriteNode*)[self childNodeWithName:@"flecha"];
-    
+
     
     
 }
@@ -67,23 +66,26 @@ SKSpriteNode* nodo =(SKSpriteNode*)[self childNodeWithName:@"flecha"];
    // SKSpriteNode* nodo =(SKSpriteNode*)[self childNodeWithName:@"flecha"];
 
     
-    
-    self.nodoflecha=[SKSpriteNode spriteNodeWithImageNamed:@"puntaflecha.png"];
-    
-    if (posx>160) {
-        return;
-
-    }
+    SKSpriteNode* nodoflecha;
+    nodoflecha=[SKSpriteNode spriteNodeWithImageNamed:@"puntaflecha.png"];
     
 
-    self.nodoflecha.position=CGPointMake(location.x+posx,location.y);
-    self.nodoflecha.size=CGSizeMake(20, 20);
-    self.nodoflecha.name=@"flecha";
-   // self.nodoflecha.zPosition=80;
+
+    nodoflecha.position=CGPointMake(location.x+posx,location.y);
+    nodoflecha.size=CGSizeMake(20, 20);
+    nodoflecha.name=@"flecha";
+    nodoflecha.zPosition=80;
     
-    [self addChild:self.nodoflecha];
+    [self addChild:nodoflecha];
 
     posx=posx+20;
+    
+    if (nodoflecha.position.x>550) {
+        
+        [self performSelector:@selector(createFlechasHoriz) withObject:nil afterDelay:0.2];
+    }
+    
+    
     [self performSelector:@selector(createFlechasHoriz) withObject:nil afterDelay:0.2];
     
     
