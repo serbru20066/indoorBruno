@@ -11,6 +11,9 @@
 @interface MyScene : SKScene
 {
     SKSpriteNode *background;
+    float posx;
+    float posy;
+    CGPoint location;
 }
-
+@property (nonatomic) SKSpriteNode* nodoflecha;
 @end

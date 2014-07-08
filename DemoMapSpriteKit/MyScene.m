@@ -29,8 +29,9 @@
         [self addChild:background];
         [self addChild:myLabel];
         
-        
-       
+        posx=0;
+        posx=20;
+        posy=20;
 
         
         
@@ -43,68 +44,51 @@
     SKSpriteNode* nodo =(SKSpriteNode*)[self childNodeWithName:@"titulo"];
     [nodo removeFromParent];
 
-    
-    for (UITouch *touch in touches) {
-        CGPoint location = [touch locationInNode:self];
-        
-        SKSpriteNode *sprite = [SKSpriteNode spriteNodeWithImageNamed:@"cuerpoflecha"];
-        [sprite setSize:CGSizeMake(20, 20)];
-        sprite.name=@"cuerpoflecha";
-        sprite.position = location;
-        
-        
-        SKSpriteNode *sprite2 = [SKSpriteNode spriteNodeWithImageNamed:@"puntaflecha"];
-        [sprite2 setSize:CGSizeMake(20, 20)];
-        sprite2.name=@"puntaflecha";
-        sprite2.position=CGPointMake(location.x+20, location.y);
-        
-        [self addChild:sprite];
-        [self addChild:sprite2];
 
-        
-        //esquina 1
-        SKSpriteNode* nodo3 =[SKSpriteNode spriteNodeWithImageNamed:@"cuerpoflecha"];
-        nodo3.name=@"cuerpoflecha2";
-        nodo3.zRotation=-1.55;
-        [nodo3 setSize:(CGSizeMake(15, 20))];
-        [nodo3 setPosition:(CGPointMake(526, location.y +10))];
-        
-        [self addChild:nodo3];
-        
+    for (UITouch *touch in touches) {
+        location = [touch locationInNode:self];
+ 
+        [self createFlechasHoriz];
+
     }
 }
 
 -(void)update:(CFTimeInterval)currentTime {
-    /* Called before each frame is rendered */
-    SKSpriteNode* nodo1 =(SKSpriteNode*)[self childNodeWithName:@"cuerpoflecha"];
-     SKSpriteNode* nodo2 =(SKSpriteNode*)[self childNodeWithName:@"puntaflecha"];
-   
     
-   
-   
+SKSpriteNode* nodo =(SKSpriteNode*)[self childNodeWithName:@"flecha"];
     
-    if (nodo2.position.x>525) {
-
-        
-        SKSpriteNode* nodo3 =(SKSpriteNode*)[self childNodeWithName:@"cuerpoflecha2"];
-        [nodo3 setSize:(CGSizeMake(nodo3.size.width+0.5, nodo3.size.height))];
-        [nodo3 setPosition:(CGPointMake(nodo3.position.x, nodo3.position.y-0.25))];
-        
-        
-        [nodo1 setPosition:(CGPointMake(nodo1.position.x ,nodo1.position.y))];
-        nodo2.zRotation=-1.5;
-        [nodo2 setPosition:(CGPointMake(nodo2.position.x, nodo2.position.y-0.5))];
-
-        
-        return;
-    }
     
-    [nodo2 setPosition:(CGPointMake(nodo2.position.x+0.5, nodo2.position.y))];
-    [nodo1 setSize:(CGSizeMake(nodo1.size.width+0.5, nodo1.size.height))];
-    [nodo1 setPosition:(CGPointMake(nodo1.position.x+0.25, nodo1.position.y))];
     
 }
 
+
+-(void) createFlechasHoriz{
+    
+   // SKSpriteNode* nodo =(SKSpriteNode*)[self childNodeWithName:@"flecha"];
+
+    
+    
+    self.nodoflecha=[SKSpriteNode spriteNodeWithImageNamed:@"puntaflecha.png"];
+    
+    if (posx>160) {
+        return;
+
+    }
+    
+
+    self.nodoflecha.position=CGPointMake(location.x+posx,location.y);
+    self.nodoflecha.size=CGSizeMake(20, 20);
+    self.nodoflecha.name=@"flecha";
+   // self.nodoflecha.zPosition=80;
+    
+    [self addChild:self.nodoflecha];
+
+    posx=posx+20;
+    [self performSelector:@selector(createFlechasHoriz) withObject:nil afterDelay:0.2];
+    
+    
+    
+}
 
 
 @end
